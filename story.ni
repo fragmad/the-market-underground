@@ -29,13 +29,34 @@ Section 1 - The Tower
 
 The Tower's Reception is a room. "With a floor of filthy marble and a low ceiling of rough concrete you get the impression that whoever started to decorate the reception gave up halfway through. Dim florescent lights flicker above you. The reception desk faces southwards towards a large set of brass revolving doors. "
 
+
 Section 2 - Around the Tower
 
 The Tower's South Exit is a room. It is south of the Tower's Reception. "You are close to the limestone edges of the market's walls. Where the light from inside the tower or the market place hits the walls you can see patterns of colours in the Dijon mustered coloured wall. To the north there is a break in the ring of concessions which occupy the bottom of the access tower. To the northeast you can see the edges of the market."
 
-The Market's Edge is a room.  It is northeast of The Tower's South Exit. The description of The Market's Edge is "Wooden framed shops with white plaster walls begin to form a long street which vanishes into the distant east. Outside each of the shops hang lanterns of different shapes and sizes. To the northeast  there appears to be an open food concession."  
+The Market's Edge is a room.  It is northeast of The Tower's South Exit. The description of The Market's Edge is "Wooden framed shops with white plaster walls begin to form a long street which vanishes into the distant east. Outside each of the shops hang lanterns of different shapes and sizes. To the northwest  there appears to be an open food concession."  
 
-The Noodle Stall is a room. It is northwest of The Market's Edge. The description is "The tower's circular walls wrap around to the chamber's edge. Built into the walls are food concessions. The only place open is a noodle stall."
+The Noodle Stall is a room. It is northwest of The Market's Edge. The description is "The tower's circular walls wrap around to the chamber's edge. Built into the walls are food concessions. The only place open is a noodle stall.  Inside the chef attends to a chopping board covered in vegetables. "
+
+Chapter 1 - Peoples
+
+The Noodle Chef is a man. "The chef's stained overalls hang from his scrawny body. He obviously hasn't been eating the food he cooks." The Noodle Chef is inside the Noodle Stall.
+
+hello-chef-npc and good-bye-chef-npc are chat nodes. 
+
+Report giving text for hello-chef-npc: instead say "The chef turns around still holding his 12' cooks knife. He waves the knife at you and says, 'Go away. Busy!' The chef turns his back to you and starts chopping again."
+Carry out finding responses to hello-chef-npc: link to good-bye-chef-npc.
+
+Report giving link to good-bye-chef-npc: instead say "'Good bye.' ".
+Report giving text for good-bye-chef-npc: instead say "The chef keeps his back turned to you. 'Sod off!'".
+
+Instead of talking to Noodle Chef: run a conversation from hello-chef-npc. 
+
+
+Chapter 2 - Things 
+
+The Noodle Shop lantern is a thing. It is fixed in place. The description is "A lantern made of orange paper with a dim blue LED hangs from the serving hatch, which has been propped open the for the night." It is in the Noodle Stall . 
+
 
 Section 3 - The Market 
 
@@ -43,7 +64,7 @@ The Lower Market is a room. It is east of The Market's Edge. The description is 
 
 The Middle Market is a room. It is east of The Lower Market. The description is "More Shops."
 
-The Upper Market is a room. It is east of The Middle Market. The description is "Even More Shops. Yay capatalism in science fiction! \0/"
+The Upper Market is a room. It is east of The Middle Market. The description is "Even More Shops"
 
 The Cafe's Front is a room. It is south of the Middle Market.  The description is "Tables and chairs are organised behind a roped off area."
 
@@ -59,7 +80,7 @@ Volume 4 - Facts
 
 Book 1 - Player Character 
 
-The player is a person called W. The description of W is "You've had a bad day. Your haven't washed for several days and you have a headache."
+The player is a person called W. The description of W is "You've had a bad day. Your fell as though they haven't washed for several days and you have a headache. The back of your head iches."
 
 The criminality quality is a number which varies.
 The decency quality is a number which varies.
@@ -76,15 +97,15 @@ The Old Man is a man. The Old Man is in The Cafe's Front. "An elderly gentleman 
 
 Chapter 2 - The Waiters 
 
-The Grimwood is a person in the Cafe. "A waiter wearing a red waistcoat. They look like a drenched rat with greasy hair combed over an increasing bald batch." They are alive. 
+Grimwood is a person in the Cafe. "A waiter wearing a red waistcoat. They look like a drenched rat with greasy hair combed over an increasing bald batch." They are alive. 
 
-The Harrison is a person in the Cafe. "A waiter wearing a blue waistcoat. They look like a greedy cat."
+Harrison is a person in the Cafe. "A waiter wearing a blue waistcoat. They look like a greedy cat."
 
 Section 2 - Items
 
 The coffee pot is a container in the Cafe's Back. "A plastic filter coffee machine sat on a table in the pack. A glass flask of foul smelling coffee sits on top of a hot plate."
 
-The sherry barrel is a closed openable container in the Cafe's Back.  "A small wooden barrel with the words 'Fino Sherry' stamped on the side. There is a tap at the front and a cork plugged into a hole in the top." 
+The sherry barrel is a closed openable container in the Cafe's Back.  "A small wooden barrel with the words 'Fino Sherry' stamped on the side in black letters. There is a tap at the front and a cork plugged into a hole in the top." 
 
 The poison vial is a thing. The red waiter carries the poison vial. 
 
