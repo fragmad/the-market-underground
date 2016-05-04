@@ -43,7 +43,7 @@ The Lower Market is a room. It is east of The Market's Edge. The description is 
 
 The Middle Market is a room. It is east of The Lower Market. The description is "More Shops."
 
-The Upper Market is a room. It is east of The Middle Market. The description is "Even More Shops."
+The Upper Market is a room. It is east of The Middle Market. The description is "Even More Shops. Yay capatalism in science fiction! \0/"
 
 The Cafe's Front is a room. It is south of the Middle Market.  The description is "Tables and chairs are organised behind a roped off area."
 
