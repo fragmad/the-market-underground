@@ -1,4 +1,4 @@
 #+TITLE: The Market Underground 
 #+AUTHOR: William Ellwood
 
-Written in Infrom 7. Notes to come later.
+Written in Inform 7. Notes to come later.
