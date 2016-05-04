@@ -66,7 +66,7 @@ The decency quality is a number which varies.
 
 Volume 5 - Storylets
 
-Book 1 - The Old Man and the Evil Waiter 
+Book 1 - The Old Man and Grimwood the Evil Waiter 
 
 Section 1 - NPCs
 
@@ -76,9 +76,9 @@ The Old Man is a man. The Old Man is in The Cafe's Front. "An elderly gentleman 
 
 Chapter 2 - The Waiters 
 
-The Red Waiter is a person in the Cafe. "A waiter wearing a red fronted waistcoat. They look like a rat with greasy hair." They are alive. 
+The Grimwood is a person in the Cafe. "A waiter wearing a red waistcoat. They look like a drenched rat with greasy hair combed over an increasing bald batch." They are alive. 
 
-The Blue Waiter is a person in the Cafe. "A waiter wearing a blue fronted waistcoat. They look like a greedy cat."
+The Harrison is a person in the Cafe. "A waiter wearing a blue waistcoat. They look like a greedy cat."
 
 Section 2 - Items
 
@@ -90,25 +90,25 @@ The poison vial is a thing. The red waiter carries the poison vial.
 
 Section 3 - Conversations 
 
-Chapter 1 - The Red Waiter 
+Chapter 1 - Grimwood
 
-hello-red-waiter, im-interested-red-waiter, whats-in-it-for-me, good-bye-red-waiter are chat nodes. 
+hello-grimwood-npc, im-interested-grimwood-npc, whats-in-it-for-me, good-bye-grimwood-npc are chat nodes. 
 
-Report giving text for hello-red-waiter: instead say "The Red Waiter takes you to one side and speaks in a low voice. 'Did you see the old man sitting outside? He's a regular customer of ours, but he's getting on a bit, and he's written us both into his estate. And I've got some debts to pay. Do you think you could expedite the process for me?"
-Carry out finding responses to hello-red-waiter: link to im-interested-red-waiter; link to whats-in-it-for-me; link to good-bye-red-waiter.
+Report giving text for hello-grimwood-npc: instead say "The Red Waiter takes you to one side and speaks in a low voice. 'Did you see the old man sitting outside? He's a regular customer of ours, but he's getting on a bit, and he's written us both into his estate. And I've got some debts to pay. Do you think you could expedite the process for me?"
+Carry out finding responses to hello-grimwood-npc: link to im-interested-grimwood-npc; link to whats-in-it-for-me; link to good-bye-grimwood-npc.
 
-Report giving link to im-interested-red-waiter: instead say "'I guess I can help you out.'".
-Report giving text for im-interested-red-waiter: move poison vial to player;  instead say "The waiter grabs your hand to shake it. They slip you a small glass vial and lean in close to whisper,  'Good, good. Just put this in his sherry. It will be quick.'".
-Carry out finding responses to im-interested-red-waiter: link to good-bye-red-waiter. 
+Report giving link to im-interested-grimwood-npc: instead say "'I guess I can help you out.'".
+Report giving text for im-interested-grimwood-npc: move poison vial to player;  instead say "The waiter grabs your hand to shake it. They slip you a small glass vial and lean in close to whisper,  'Good, good. Just put this in his sherry. It will be quick.'".
+Carry out finding responses to im-interested-grimwood-npc: link to good-bye-grimwood-npc. 
 
 Report giving link to whats-in-it-for-me: instead say "'What's in it for me?'".
 Report giving text for whats-in-it-for-me: move poison vial to player;  instead say "The waiter smiles and shows you his broken teeth. 'I'm glad you asked,' he says. 'You're new here and you need a repuation. Do this and people will know what kind of person you are.'".
-Carry out finding responses to whats-in-it-for-me: link to im-interested-red-waiter; link to good-bye-red-waiter. 
+Carry out finding responses to whats-in-it-for-me: link to im-interested-grimwood-npc; link to good-bye-grimwood-npc. 
 
-Report giving link to good-bye-red-waiter: instead say "'Good bye.' ".
-Report giving text for good-bye-red-waiter: instead say "'Remember what we discussed.'".
+Report giving link to good-bye-grimwood-npc: instead say "'Good bye.' ".
+Report giving text for good-bye-grimwood-npc: instead say "'Remember what we discussed.'".
 
-Instead of talking to Red Waiter: run a conversation from hello-red-waiter. 
+Instead of talking to Grimwood: run a conversation from hello-grimwood-npc. 
 
 Section 4 - Scenes
 
@@ -117,7 +117,7 @@ The Evil Waiter is a scene. Evil Waiter begins when the player is in the Cafe.
 After dropping the poison vial in the coffee pot: 
 	say "A virtious smoke rises from the coffee pot.";
 	increase the decency quality by 1;
-	now the Red Waiter is dead. 
+	now Grimwood is dead. 
 		
 After dropping the poison vial in the sherry barrel: 
 	 say "An evil smoke rises from the sherry barrel";
@@ -134,15 +134,16 @@ Evil Waiter ends tragically when poison vial is in the sherry barrel.
 When Evil Waiter ends  justly:
 	now the coffee pot is nowhere;
 	now the sherry barrel is nowhere;
-	now the Blue Waiter is nowhere;
+	now Grimwood is nowhere;
+	now Harrison is nowhere;
 	say "The Red waiter choked to death on the poisoned coffee."
 	
 When Evil Waiter ends tragically:
 	now the coffee pot is nowhere;
 	now the sherry barrel is nowhere;
 	now the Old Man is nowhere;
-	now the Red Waiter is nowhere;
-	now the Blue Waiter is nowhere;	
+	now Grimwood is nowhere;
+	now Harrison is nowhere;	
 	say "The Old Man choked to death on the poisoned sherry.";
 	now the player is in the middle market; 
 
