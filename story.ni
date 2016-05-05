@@ -99,7 +99,7 @@ Chapter 2 - The Waiters
 
 Grimwood is a person in the Cafe. "A waiter wearing a red waistcoat. They look like a drenched rat with greasy hair combed over an increasing bald batch." They are alive. 
 
-Harrison is a person in the Cafe. "A waiter wearing a blue waistcoat. They look like a greedy cat."
+Harrison is a person in the Cafe. "A waiter wearing a blue waistcoat. They look like a greedy cat who's tired of exerting itself."
 
 Section 2 - Items
 
@@ -115,7 +115,7 @@ Chapter 1 - Grimwood
 
 hello-grimwood-npc, im-interested-grimwood-npc, whats-in-it-for-me, good-bye-grimwood-npc are chat nodes. 
 
-Report giving text for hello-grimwood-npc: instead say "The Red Waiter takes you to one side and speaks in a low voice. 'Did you see the old man sitting outside? He's a regular customer of ours, but he's getting on a bit, and he's written us both into his estate. And I've got some debts to pay. Do you think you could expedite the process for me?"
+Report giving text for hello-grimwood-npc: instead say "Grimwood takes you to one side and speaks in a low voice. 'Did you see the old man sitting outside? He's a regular customer of ours, but he's getting on a bit, and he's written us both into his estate. And I've got some debts to pay. Do you think you could expedite the process for me?"
 Carry out finding responses to hello-grimwood-npc: link to im-interested-grimwood-npc; link to whats-in-it-for-me; link to good-bye-grimwood-npc.
 
 Report giving link to im-interested-grimwood-npc: instead say "'I guess I can help you out.'".
@@ -136,7 +136,7 @@ Section 4 - Scenes
 The Evil Waiter is a scene. Evil Waiter begins when the player is in the Cafe. 
 
 After dropping the poison vial in the coffee pot: 
-	say "A virtious smoke rises from the coffee pot.";
+	say "Smoke rises from the coffee pot.";
 	increase the decency quality by 1;
 	now Grimwood is dead. 
 		
@@ -146,7 +146,9 @@ After dropping the poison vial in the sherry barrel:
 	 now the Old Man is dead.
 	
 When Evil Waiter begins: 
-	say "There's a flourish of trumpets."
+	say "As you step into the back of the empty cafe one of the two waiters calls you over. 'You look new down here. Do you want to make friends and influence people?' the waiter says.  [paragraph break]
+'Oh not this again,' says the other waiter. 'Grimwood is always scheming and trying to entice people into his foul plans. Don't listen to him.' [paragraph break]
+Grimwood puts a tattooed hand on your shoulder. 'Harrisson, you're too much of a good egg. I'm just trying to make a simple request of our new friend,' Grimwood says.[paragraph break]"
 
 Evil Waiter ends justly when poison vial is in the coffee pot.
 
@@ -157,8 +159,9 @@ When Evil Waiter ends  justly:
 	now the sherry barrel is nowhere;
 	now Grimwood is nowhere;
 	now Harrison is nowhere;
-	say "The Red waiter choked to death on the poisoned coffee."
-	
+	say "From outside the backroom you hear Harrison & Grimwood talking. 'Grimwood, our coffees are running low, would you like me to fetch you a fresh mug?'[paragraph break] 'Sure. Milk if we've got any and two sugers regardless,' Grimwood says. [paragraph break] Harrison pulls back the curtain which divides the back from the front. He put's one mug down beside the sink before pouring a cup of the stale coffee. After adding a dash of milk Harrison winks at you and leaves. From outside you hear someone take a theatrical slurp of coffee. [paragraph break] 'GODDAMN IT HARRISON! I TOLD YOU THAT I WANTED SUGAR IN THIS MUCK!'[paragraph break] 'I'm so sorry,' Harrison says. 'It won't happen again.'  [paragraph break] From the otherside of the curtain you hear a wretching noise followed by the sounds of tables and chairs falling over. Interested you pull back the curtain and see Grimwood lieing on the ground surrounded by broken furniture. Blood and vomit pools around his face.[paragraph break]'Excuse me, but we are now closed for the foreseable future,' Harrisson says before ushering you and the old man away from the cafe.";
+	now the player is in the middle market;
+		
 When Evil Waiter ends tragically:
 	now the coffee pot is nowhere;
 	now the sherry barrel is nowhere;
