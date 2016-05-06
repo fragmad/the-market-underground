@@ -8,7 +8,7 @@ The story genre is "Science Fiction".
 
 The story creation year is 2016.
 
-The player is in the Cafe's Front.
+The player is in the Tower's Reception.
 
 [Use brief room descriptions.]
 
@@ -76,6 +76,9 @@ Volume 3 - Rules
 
 A person can be alive or dead.
 
+A scene can be foggy or rainy.
+
+
 Volume 4 - Facts
 
 Book 1 - Player Character 
@@ -93,7 +96,7 @@ Section 1 - NPCs
 
 Chapter 1 - The Old Man
 
-The Old Man is a man. The Old Man is in The Cafe's Front. "An elderly gentleman sitting at the end of a lonely night enjoying a glass after glass of sherry.  He watches the empty street around him. Every so often his grey moustache twitches above his lip. You think that he might burst into tears at any moment."  They are alive.
+The Old Man is a man. The Old Man is in The Cafe's Front. "An elderly gentleman sitting at the end of a lonely night enjoying a glass after glass of sherry.  He watches the empty street around him. Every so often his grey moustache twitches above his lip. You think that he might burst into tears at any moment."  They are alive. 
 
 Chapter 2 - The Waiters 
 
@@ -130,6 +133,26 @@ Report giving link to good-bye-grimwood-npc: instead say "'Good bye.' ".
 Report giving text for good-bye-grimwood-npc: instead say "'Remember what we discussed.'".
 
 Instead of talking to Grimwood: run a conversation from hello-grimwood-npc. 
+
+Chapter 2 - Harrison 
+
+hello-harrison-npc, sounds-good-harrison-npc, nah-harrison-npc, good-bye-harrison-npc are chat nodes. 
+
+Report giving text for hello-harrison-npc: instead say "Speaking in a low voice Harrison says, 'I hate Grimwood.' 'He's spiteful and mean. A real pig of a man. Anyway I don't think he should posion the old man. He's here everynight and he's basically giving us all of his money anyway, so why kill him?".
+Carry out finding responses to hello-harrison-npc: link to sounds-good-harrison-npc; link to nah-harrison-npc.
+
+Report giving link to sounds-good-harrison-npc: instead say "In a low voice say, 'I agree. It's a pointless murder.'"
+Report giving text for sounds-good-harrison-npc: instead say "Harrison continues sotto voiced, 'I'm glad that you agree with me,' Harrison says. He smiles. 'Look Grimwood's tried to get his marks to posion the old man. How about you put the vial he gives you in the coffee we're drinking?'"
+Carry out finding responses to sounds-good-harrison-npc:  link to nah-harrison-npc; link to good-bye-harrison-npc. 
+
+Report giving link to nah-harrison-npc: instead say "'I'll do what I want."
+Report giving text for nah-harrison-npc: instead say "'Then it's on your concious,' Harrison says.".
+Carry out finding responses to nah-harrison-npc:  link to good-bye-harrison-npc. 
+
+Report giving link to good-bye-harrison-npc: instead say "'Good bye.' ".
+Report giving text for good-bye-harrison-npc: instead say "Harrison runs his index finger across his throat quickly and nerviously. 'Be the better person here.'".
+
+Instead of talking to Harrison: run a conversation from hello-harrison-npc. 
 
 Section 4 - Scenes
 
@@ -168,7 +191,7 @@ When Evil Waiter ends tragically:
 	now the Old Man is nowhere;
 	now Grimwood is nowhere;
 	now Harrison is nowhere;	
-	say "The Old Man choked to death on the poisoned sherry.";
+	say "Outside you hear someone click the fingers. A careful voice follows, one which is trying hard not to fall over their words. 'Another sherry! Maybe my last for the night.'[paragraph break]Grimwood walks into the backroom holding a circular tray. Without thought he puts a small glass underneath the sherry barrel's tap, opens it, and lets it fill halfway. He says nothing to you and goes outside to deliver the deadly drink.[paragraph break]You hear the sound of a chair being pushed back on the stone flagged. 'I SHOULD NEVER HAVE TRUSTED YOU! HOW DARE YOU...' A table tips over shattering empty glasses.[paragraph break]Grimwood peaks around the curtain into the back. 'You should leave he says. There's going to be some cleaning up to do tonight.' ";
 	now the player is in the middle market; 
 
 
