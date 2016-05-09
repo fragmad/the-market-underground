@@ -3,6 +3,8 @@
 
 * What is 'The Market Underground'?
 - The High Concept Description
+In a cavern deep underground the most unusual market in the solar system exists. A place where lonely old man drink sherry beneath the eyes of murderous waiters and where sitting on the edge of an underground lake beggars plot a lazy revolution. It is here you find yourself at the bottom of a tower and of life. Will you be decent?
+
 - A work of IF
 - A sandbox for testing narrative design
 * What was the Point of This?
