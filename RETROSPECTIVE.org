@@ -1,0 +1,31 @@
+#+TITLE: The Market Underground Retrospective
+#+AUTHOR: William Ellwood
+
+* What is 'The Market Underground'?
+- The High Concept Description
+- A work of IF
+- A sandbox for testing narrative design
+* What was the Point of This?
+- Learning experience in a new language (Inform 7)
+- Something different from writing prose fiction
+- Something to make it feel like I've not wasted my time off work
+* How Do I Feel About the Project?
+- What made me Glad?
+- What made me Sad?
+- What made be Mad?
+* What Did I get Out of It?
+- Project Practice
+- Prose Practice
+- Enjoyment of Creating Something
+- Enjoyment from following a project
+* What Could I Improve in the Work?
+- More descriptions/items with better sign posting
+- Add a weather and day/night cycle
+* What Could I Improve in the Process?
+- Spent more time on the parts in the work
+- Invest some time, but not a lot, in looking at Emacs modes for Inform 7
+- Planned more of the work ahead of time
+  - Not sure where the cost/benefit balance for this would be
+* What Next?
+- Continue to add more /depth/ to the work
+- Continue to add more storylets
